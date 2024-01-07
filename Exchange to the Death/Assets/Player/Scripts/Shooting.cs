@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    [SerializeField] Animator animator;
 
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject bulletPrefab;
@@ -17,6 +18,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        animator.SetTrigger("Shoot");
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
 }
