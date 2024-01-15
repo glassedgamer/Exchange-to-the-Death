@@ -93,8 +93,8 @@ ScriptedImporter:
   rigSpriteImportData:
   - name: Head
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -114,8 +114,8 @@ ScriptedImporter:
     uvTransform: {x: 5, y: -23}
   - name: Arm_L
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 1, y: 0.5}
+    alignment: 5
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -156,8 +156,8 @@ ScriptedImporter:
     uvTransform: {x: -9, y: -10}
   - name: Arm_R
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0, y: 0.5}
+    alignment: 4
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -177,15 +177,15 @@ ScriptedImporter:
     uvTransform: {x: 15, y: -11}
   - name: Leg_R
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 1}
+    alignment: 2
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 25
       width: 3
-      height: 14
+      height: 15
     spriteID: 2d930436f2a3885478f65a500f307af0
     spriteBone: []
     spriteOutline: []
@@ -198,15 +198,15 @@ ScriptedImporter:
     uvTransform: {x: -13, y: 25}
   - name: Leg_L
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 1}
+    alignment: 2
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 15
       y: 25
       width: 3
-      height: 14
+      height: 15
     spriteID: d8dff0d57cb9f864e96d3e7e616efc9a
     spriteBone: []
     spriteOutline: []

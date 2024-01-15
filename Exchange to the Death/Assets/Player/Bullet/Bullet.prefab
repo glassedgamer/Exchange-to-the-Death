@@ -125,6 +125,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5470482601968922306}
     m_Modifications:
+    - target: {fileID: -9156867838365188483, guid: b605e0064e4415a40bc7f447d01df1ac, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: b605e0064e4415a40bc7f447d01df1ac, type: 3}
       propertyPath: m_Name
       value: Burger

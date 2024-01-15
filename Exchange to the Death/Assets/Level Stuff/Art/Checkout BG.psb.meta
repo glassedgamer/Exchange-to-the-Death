@@ -91,7 +91,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 1
+  - name: Layer 3
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -102,7 +102,7 @@ ScriptedImporter:
       y: 4
       width: 640
       height: 360
-    spriteID: 6b0b827d7c8e1f44780ddacd52cac1ec
+    spriteID: 73f89b4b64e2ab34baae1a7a37d22755
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -438,16 +438,36 @@ ScriptedImporter:
   resliceFromLayer: 0
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 1
-    spriteName: Layer 1
+  - name: Layer 2
+    spriteName: Layer 2
     isGroup: 0
     parentIndex: -1
-    spriteID: 6b0b827d7c8e1f44780ddacd52cac1ec
-    layerID: 54
+    spriteID: 5f866fbfa54b5c24d86bd912bd33789a
+    layerID: 55
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Layer 3
+    spriteName: Layer 3
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 73f89b4b64e2ab34baae1a7a37d22755
+    layerID: 56
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 1
     isVisible: 1
+  - name: Layer 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 00000000000000000000000000000000
+    layerID: 54
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
   - name: Rectangle 1 copy 5
     spriteName: Rectangle 1 copy 5
     isGroup: 0
