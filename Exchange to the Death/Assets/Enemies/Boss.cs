@@ -8,13 +8,15 @@ public class Boss : MonoBehaviour
 
     public bool isFlipped = false;
 
+    [SerializeField] Animator jamGFX;
+
     GameObject checkoutWorldManager;
 
     void Start()
     {
         checkoutWorldManager = GameObject.FindWithTag("CheckoutWorldManager");
 
-        InvokeRepeating("CartAttack", checkoutWorldManager.timeBetweenMoney, checkoutWorldManager.timeBetweenMoney);
+        InvokeRepeating("Stage1Attack", checkoutWorldManager.GetComponent<CheckoutWorld>().timeBetweenMoney + 3f, checkoutWorldManager.GetComponent<CheckoutWorld>().timeBetweenMoney);
     }
 
     void Update()
@@ -43,7 +45,15 @@ public class Boss : MonoBehaviour
 
     void Stage1Attack()
     {
+        // Throw da money
+        jamGFX.SetTrigger("MoneyThrow");
         checkoutWorldManager.GetComponent<CheckoutWorld>().MoneyAttack();
+    }
+
+    void Stage2Attack() 
+    {
+        // Throw da carts
+        checkoutWorldManager.GetComponent<CheckoutWorld>().CartAttack();
     }
 
 }

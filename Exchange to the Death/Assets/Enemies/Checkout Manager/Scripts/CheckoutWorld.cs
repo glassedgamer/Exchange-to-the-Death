@@ -17,11 +17,17 @@ public class CheckoutWorld : MonoBehaviour
     [SerializeField] float timeBetweenCarts = 30f;
 
     [Header("Money")]
-    [SerializeField] GameObject moneyPrefab;
+    [SerializeField] GameObject[] moneyPrefab;
+
+    [SerializeField] int moneyAmount;
 
     public float timeBetweenMoney;
 
-    [SerializeField] int moneyAmount;
+    [Header("Health Pickups")]
+    [SerializeField] GameObject healthPickup;
+
+    [SerializeField] float timeBetweenHealth = 30f;
+
 
     void Start()
     {
@@ -30,9 +36,11 @@ public class CheckoutWorld : MonoBehaviour
         InvokeRepeating("MoneyAttack", timeBetweenMoney, timeBetweenMoney);*/
         countDownTimerVal = new WaitForSeconds(1f);
         StartCoroutine(IntroTimer());
+
+        InvokeRepeating("DropHealth", timeBetweenHealth + 3, timeBetweenHealth);
     }
 
-    void CartAttack()
+    public void CartAttack()
     {
         Instantiate(cartPrefab, cartSpawn.position, Quaternion.identity);        
     }
@@ -42,8 +50,17 @@ public class CheckoutWorld : MonoBehaviour
         for (int i = 0; i < moneyAmount; i++)
         {
             var position = new Vector3(Random.Range(-8f, 8f), 4.5f, 0);
-            Instantiate(moneyPrefab, position, Quaternion.identity);
+            var randomMoney = Random.Range(0, 2);
+
+            GameObject clone = Instantiate(moneyPrefab[randomMoney], position, Quaternion.identity);
         }
+    }
+
+    void DropHealth() 
+    {
+        var position = new Vector3(Random.Range(-8f, 8f), 4.5f, 0);
+
+        Instantiate(healthPickup, position, Quaternion.identity);
     }
 
     IEnumerator IntroTimer()
